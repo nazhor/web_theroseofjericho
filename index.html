@@ -65,86 +65,47 @@
 				  <li><a href="#nobody01">PITCH</a></li>
 				  <li><a href="#nobody02">TRAILER</a></li>
 				  <li><a href="#nobody03">SNAPS</a></li>
-				  <li><a href="#nobody04">NEWS</a></li>
-				  <li><a href="#nobody05">CONTACT</a></li>
+				  <li><a href="#nobody04">CONTACT</a></li>
 				</ul>
 			</div>
 
 		</nav>
 	</header>
 
-	<!-- INTRO -->
-	<?php
-	if(!$esMovil){ ?>
-		<section class="intro full-width full-height jIntro" id="nobody00">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="playerVideo" data-property="{videoURL:'2SOXmlf2p9E',showControls:false,containment:'self',autoPlay:true, mute:true, startAt:0,opacity:1,ratio:'16/9', addRaster:true}"> <!-- Slider -->
-							<a href="#" class="play-video">Play/Pause</a>
-						</div>
-					</div>
-				</div>
+
+	<section class="intro full-width jIntro" id="anchor00">
+		<div id="intro-carousel" class="carousel slide carousel-fade" data-pause="false">
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner" role="listbox">
+				<!-- First slide -->
+				<div class="item active intro-fullscreen">
+					<!-- Modify Image BG -->
+					<div class="fill" style="background-image:url('images/movil.jpg');"></div>
+				</div><!-- /.item -->
+			</div><!-- /.carousel-inner -->
+		</div><!-- /.carousel -->
+	</section>
+
+	<div class="player horizontal">
+		<div class="container">
+			<div class="info-album-player">
+			<div class="album-cover" style="background: url('images/cover-player.jpg') no-repeat center" id="bg-image3"></div>
+			<p class="album-title">Pr0t0type Album</p>
+			<p class="artist-name">Dj 5inapsi5</p>
 			</div>
-		</section>
-	<?php
-	}else{?>
-		<section class="intro full-width jIntro" id="anchor00">
-			<div id="intro-carousel" class="carousel slide carousel-fade" data-pause="false">
-				<!-- Indicators --
-				<ol class="carousel-indicators">
-					<li data-target="#intro-carousel" data-slide-to="0" class="active"></li>
-					<li data-target="#intro-carousel" data-slide-to="1"></li>
-					<li data-target="#intro-carousel" data-slide-to="2"></li>
-				</ol>-->
-				<!-- Wrapper for slides -->
-				<div class="carousel-inner" role="listbox">
-
-					<!-- First slide -->
-					<div class="item active intro-fullscreen">
-						<!-- Modify Image BG -->
-						<div class="fill" style="background-image:url('images/movil.jpg');"></div>
-						<!--<div class="carousel-caption intro-center">
-							<h1 data-animation="animated fadeIn" class="primary-title">Sound Lab</h1>
-							<h2 data-animation="animated fadeIn" class="subtitle-text">Music Band & Musician Template</h2>
-							<div class="voffset50"></div>
-							<div data-animation="animated fadeInUp" class="animate-btn">
-							<input class="btn square stay-in-touch-submit" type="submit" name="button" value="Buy Template">
-						</div>-->
-					</div><!-- /.item -->
-				</div><!-- /.carousel-inner -->
-			</div><!-- /.carousel -->
-		</section>
-	<?php
-	}
-	?>
-
-	<!-- PLAYER (En movil lo ocultamos)-->
-	<?php
-	if(!$esMovil){ ?>
-		<div class="player horizontal">
-			<div class="container">
-			  <div class="info-album-player">
-				<div class="album-cover" style="background: url('images/cover-player.jpg') no-repeat center" id="bg-image3"></div>
-				<p class="album-title">Pr0t0type Album</p>
-				<p class="artist-name">Dj 5inapsi5</p>
-			  </div>
-			  <div class="player-content">
-				<audio preload></audio>
-				<ol class="playlist">
-				  <li><a href="#" data-src="mp3/01_Pr0t0type5e55ion.mp3">Pr0t0type 5e55ion</a></li>
-				</ol>
-				<div class="nextprev">
-				  <span class="prev">prev</span>
-				  <span class="next">next</span>
-				</div>
-				<span class="btnloop">loop</span>
-			  </div>
+			<div class="player-content">
+			<audio preload></audio>
+			<ol class="playlist">
+				<li><a href="#" data-src="mp3/01_Pr0t0type5e55ion.mp3">Pr0t0type 5e55ion</a></li>
+			</ol>
+			<div class="nextprev">
+				<span class="prev">prev</span>
+				<span class="next">next</span>
+			</div>
+			<span class="btnloop">loop</span>
 			</div>
 		</div>
-	<?php
-	}
-	?>
+	</div>
 
 	<!-- BIOGRAPHY -->
 	<section class="section container-fluid full-width biography" id="nobody01">
@@ -157,9 +118,6 @@
 				</p>
 				<div class="voffset40"></div>
 				<br>
-				<!--<p>
-					<img src="images/sign.png" alt="">
-				</p>-->
 			</div>
 			<div class="col-xs-12 col-md-6 col-sm-offset-1 biography-image"></div>
 		</div>
@@ -196,16 +154,6 @@
 			<div class="voffset50"></div>
 		  </div>
 		</div>
-		<!-- Filters --
-		<div class="row">
-		  <div class="col-md-12">
-			<ul class="filters">
-			  <li data-filter="*" class="is-checked wow fadeInUp" data-wow-delay="0.5s">All</li>
-			  <li data-filter=".image" class="wow fadeInUp" data-wow-delay="0.8s">Image</li>
-			  <li data-filter=".video" class="wow fadeInUp" data-wow-delay="1s">Video</li>
-			</ul>
-		  </div>
-		</div>-->
 		<!-- gallery -->
 		<div class="row">
 		  <div class="col-md-12">
@@ -250,36 +198,8 @@
 	  </div>
 	</section>
 
-	<!-- NEWSLETTER -->
-	  <section class="section stay-in-touch inverse-color parallax-section" data-parallax-image="images/Muro.jpg" id="nobody04">
-		<div class="container">
-		  <div class="row">
-			<div class="col-xs-12 col-md-6">
-				<div class="voffset190"></div>
-				<h2 class="title inverse fucsia">STAY TUNED</h2>
-				<div class="voffset30"></div>
-
-				<!-- Begin MailChimp Signup Form -->
-				<div id="mc_embed_signup">
-					<form action="https://nowandstudios.us1.list-manage.com/subscribe/post?u=9f5bcab088265197906801271&amp;id=5473c01665" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_self" class="validate" novalidate>
-						<div id="mc_embed_signup_scroll">
-							<label for="stay-in-touch-email">The Rose of Jericho Lounge Bar doors will open in 2018. Suscribe for news updates!</label>
-							<input type="email" value="" name="EMAIL" class="email" id="stay-in-touch-email" placeholder="email address" required>
-							<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-							<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9f5bcab088265197906801271_5473c01665" tabindex="-1" value=""></div>
-							<div class="clear"><input type="submit" value="GET STARTED" name="subscribe" id="mc-embedded-subscribe" class="btn square stay-in-touch-submit"></div>
-						</div>
-					</form>
-				</div>
-				<!--End mc_embed_signup-->
-				<div class="voffset190"></div>
-			</div>
-		  </div>
-		</div>
-	</section>
-
 	<!-- CONTACTS -->
-	<section class="section inverse-color contact" id="nobody05">
+	<section class="section contact inverse-color parallax-section" data-parallax-image="images/Muro.jpg" id="nobody04">
 	  <div class="container">
 		<div class="row">
 		  <div class="col-md-8 col-md-offset-2">
@@ -293,7 +213,7 @@
 
 		<div class="row">
 			<div class="col-md-12 text-center">
-				<a href="https://nowandstudios.com/press/sheet.php?p=Hello_My_Name_Is_Nobody"><img src="images/presskit.png" alt="Presskit"></a>
+				<a href="https://nowandstudios.com/press/Hello_My_Name_Is_Nobody/index.html"><img src="images/presskit.png" alt="Presskit"></a>
 			</div>
 		</div>
 
